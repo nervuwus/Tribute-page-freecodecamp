@@ -1,0 +1,66 @@
+body {
+  background: #333333;
+}
+
+main#main {
+  border: solid white;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 2fr;
+  grid-gap: 70px;
+  grid-template-areas:
+    "quote header"
+    "quote content"
+    "quote footer";
+  background: #b3c6e3;
+}
+
+h1 {
+  text-align: center;
+}
+
+#div-img {
+  background: #585e69;
+  grid-area: quote;
+  width: 300px;
+  border: solid #585e69;
+}
+
+#div-img img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+p#image-caption {
+  text-align: center;
+  font-size: 18px;
+}
+
+h2 {
+  text-align: center;
+  grid-area: header;
+}
+
+.quote {
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.quote p {
+  font-size: 15px;
+}
+
+.quote a {
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.quote a:hover {
+  color: white;
+  text-decoration: underline;
+}
