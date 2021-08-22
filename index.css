@@ -13,7 +13,7 @@ main#main {
     "quote cover"
     "quote subject"
     "quote content"
-    "footer footer";
+    "quote footer";
   background: #b3c6e3;
 }
 
@@ -80,11 +80,11 @@ img.banner {
 
 article#tribute-info {
   grid-area: subject;
-  align-self: center;
   position: relative;
-  bottom: 250px;
+  bottom: 200px;
   background-color: lightgray;
   width: 93%;
+  justify-self: center;
 }
 
 p.intro {
@@ -103,6 +103,7 @@ p.intro {
 
 div.last-word {
   text-align: center;
+  font-style: bold;
 }
 
 footer {
@@ -110,4 +111,21 @@ footer {
   background: #383838;
   color: #ffffff;
   text-align: center;
+  grid-column: 1/4;
+}
+
+@media (max-width: 460px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  div#div-img {
+    width: 100px;
+  }
+
+  article#tribute-info {
+    position: relative;
+    bottom: 200px;
+  }
 }
